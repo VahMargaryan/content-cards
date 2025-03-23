@@ -1,0 +1,5 @@
+name: 'Content Cards'
+type: module
+description: 'Reusable cards with image, description, and tags, designed for dynamic filtering and optimized display.'
+package: Custom
+core_version_requirement: ^11
