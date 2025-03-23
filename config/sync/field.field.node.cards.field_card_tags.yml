@@ -1,0 +1,29 @@
+uuid: 72d3c45a-4bf6-40a0-bb4d-0a08b0805445
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_card_tags
+    - node.type.cards
+    - taxonomy.vocabulary.tags
+id: node.cards.field_card_tags
+field_name: field_card_tags
+entity_type: node
+bundle: cards
+label: 'Card tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
