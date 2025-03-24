@@ -1,0 +1,13 @@
+<div class="recent-cards-block">
+  {% for card in cards %}
+    <div class="card">
+      {% if card.image %}
+        <img src="{{ card.image }}" alt="{{ card.title }}">
+      {% endif %}
+      <h3><a href="{{ card.url }}">{{ card.title }}</a></h3>
+      <p>{{ card.description }}</p>
+    </div>
+  {% else %}
+    <p>No recent cards available.</p>
+  {% endfor %}
+</div>

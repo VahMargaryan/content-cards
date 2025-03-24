@@ -2,3 +2,12 @@ name: content-cards
 recipe: drupal11
 config:
   webroot: web
+tooling:
+  phpunit:
+    service: appserver
+    description: Run PHPUnit tests inside Lando
+    cmd: vendor/bin/phpunit --configuration phpunit.xml
+    overrides:
+      environment:
+        SIMPLETEST_BASE_URL: https://content-cards.lndo.site/
+        SIMPLETEST_DB: mysql://drupal11:drupal11@database/drupal11

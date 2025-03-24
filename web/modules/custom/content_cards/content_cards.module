@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Provides custom functionality for the content_cards module.
+ *
+ * @package content_cards
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function content_cards_theme($existing, $type, $theme, $path) {
+  return [
+    'recent_cards_block' => [
+      'variables' => ['cards' => []],
+    ],
+  ];
+}
+

@@ -1,0 +1,8 @@
+content_cards.api_cards:
+  path: '/api/cards'
+  defaults:
+    _controller: '\Drupal\content_cards\Controller\CardApiController::getFilteredCards'
+    _title: 'Cards API'
+  requirements:
+    _permission: 'access content'
+  methods: [GET]

@@ -1,0 +1,4 @@
+recent_cards_styles:
+  css:
+    theme:
+      css/recent-cards.css: {}

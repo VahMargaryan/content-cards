@@ -117,4 +117,6 @@
 /web/sites/default/.DS_store
 /web/sites/.DS_store
 /web/.DS_store
-
+.DS_Store
+web/modules/.DS_Store
+web/modules/*/*/.DS_Store

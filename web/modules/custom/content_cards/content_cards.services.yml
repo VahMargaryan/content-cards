@@ -1,0 +1,4 @@
+services:
+  controller.card_api:
+    class: Drupal\content_cards\Controller\CardApiController
+    arguments: ['@file_url_generator']
