@@ -72,4 +72,4 @@ foreach ($sample_data as $data) {
   print "Created node: {$data['title']} (nid: {$node->id()})\n";
 }
 
-print "\n✅ Script complete: Tags and sample cards created.\n";
+print "Script complete: Tags and sample cards created.\n";
