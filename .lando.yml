@@ -14,8 +14,3 @@ tooling:
 events:
   post-start:
     - appserver: composer install
-    - appserver: |
-        if ! drush status bootstrap | grep -q 'Successful'; then
-          drush si --existing-config --account-name=admin --account-pass=admin --yes
-          drush scr content-card-utils/content-card-utils.php
-        fi
