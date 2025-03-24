@@ -21,7 +21,7 @@ Follow the steps below to get the project running in your local development envi
 
 - [Lando](https://lando.dev/)
 - Composer
-- Drupal 10
+- Drupal 11
 - Database dump file (`dump.sql.gz`)
 
 ---
